@@ -6,6 +6,7 @@ console.log('Min:', Math.min(productPrice1, productPrice2, productPrice3))
 totalPrice = productPrice1 + productPrice2 + productPrice3
 console.log('Total price:', totalPrice)
 roundedTotalPrice = Math.floor(productPrice1) + Math.floor(productPrice2) + Math.floor(productPrice3)
+console.log('Rounded total price:', roundedTotalPrice)
 console.log(`Total price rounded to hundreds: ${Math.round(roundedTotalPrice/100)*100}`)
 const evenOrOdd = (Math.floor(totalPrice) % 2  == 0) ? true : false;
 console.log('Even:', evenOrOdd)
