@@ -9,9 +9,10 @@ sum = Math.floor(productPrice1) + Math.floor(productPrice2) + Math.floor(product
 console.log(`Total price rounded to hundreds: ${Math.round(sum/100)*100}`)
 const evenOrOdd = (Math.floor(totalPrice) % 2  == 0) ? true : false;
 console.log('Even:', evenOrOdd)
-console.log('Change for 500 uah: ', 500 - totalPrice)   
+console.log('Change for 500 uah: ', (500 - totalPrice).toFixed(2))   
 console.log('Average:', ((productPrice1+productPrice2+productPrice3)/3).toFixed(2))
 randomDiscount=Math.random()*100
+console.log('Discount:', randomDiscount)
 discountPrice=totalPrice-((totalPrice*randomDiscount)/100)
 console.log('Price with discount:', discountPrice.toFixed(2))
 netProfit=discountPrice-totalPrice/2
