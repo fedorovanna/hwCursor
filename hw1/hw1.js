@@ -11,7 +11,7 @@ console.log(`Total price rounded to hundreds: ${Math.round(roundedTotalPrice/100
 const evenOrOdd = (Math.floor(roundedTotalPrice) % 2  == 0) ? true : false;
 console.log('Even:', evenOrOdd)
 console.log('Change for 500 uah: ', 500 - totalPrice)  
-averagePrice= (productPrice1+productPrice2+productPrice3)/3)
+averagePrice= (productPrice1+productPrice2+productPrice3)/3
 console.log('Average:', averagePrice.toFixed(2))
 randomDiscount=Math.random()*100
 console.log('Discount:', randomDiscount)
