@@ -1,1 +1,1 @@
-prompt('Enter the first number', 0)
+prompt('Enter the first integer number')
