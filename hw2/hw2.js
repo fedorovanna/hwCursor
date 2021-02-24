@@ -1,0 +1,1 @@
+prompt('Enter the first number', 0)
