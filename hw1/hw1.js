@@ -14,11 +14,11 @@ const evenOrOdd = (Math.floor(roundedTotalPrice) % 2  == 0) ? true : false;
 console.log('Even:', evenOrOdd)
 const clientMoney = 500
 console.log('Change for 500 uah: ', (clientMoney - totalPrice).toFixed(2))  
-averagePrice= (productPrice1+productPrice2+productPrice3)/3
+const averagePrice= (productPrice1+productPrice2+productPrice3)/3
 console.log('Average:', averagePrice.toFixed(2))
-randomDiscount=Math.random()*100
-console.log('Discount:', randomDiscount)
+const randomDiscount=Math.random()*100
+console.log('Discount:', randomDiscount.toFixed(2))
 discountPrice=totalPrice-((totalPrice*randomDiscount)/100)
 console.log('Price with discount:', discountPrice.toFixed(2))
-netProfit=totalPrice/2-(totalPrice-discountPrice)
+const netProfit=totalPrice/2-(totalPrice-discountPrice)
 console.log('Net profit:', netProfit.toFixed(2))
