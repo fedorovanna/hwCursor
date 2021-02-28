@@ -1,29 +1,35 @@
-let N 
+let N = 0
 do
 {
  N = parseInt(prompt('Enter the first integer number'))
 }
-while (N==null||Number.isNaN(N)||N<=0)
-let M
+while (N == null || Number.isNaN(N) || N <= 0)
+let M = 0
 do
 {
  M = parseInt(prompt('Enter the last integer number'))
 }
-while (M==null||Number.isNaN(M)||M<=0)
+while (M == null || Number.isNaN(M) || M <= 0)
 let skipEven = confirm('Skip even numbers?')
-sumOfNumbers=0
+sumOfNumbers = 0
+if (M<N)
+{
+    let temp = N
+    N = M
+    M = temp
+}
 for (let i = N; i <= M; i++) 
 {
     if(skipEven)
     {
-        if(i%2!=0)
+        if(i % 2 != 0)
         {
-            sumOfNumbers+=i
+            sumOfNumbers += i
         }
     }
     else
     {
-        sumOfNumbers +=i;
+        sumOfNumbers += i;
     }
 }
 console.log('Sum=', sumOfNumbers)
