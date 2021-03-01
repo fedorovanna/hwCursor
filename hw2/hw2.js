@@ -38,4 +38,4 @@ else
         sumOfNumbers += i;
     }    
 }
-console.log('Sum of numbers:', sumOfNumbers)
+console.log(`Sum of numbers from ${N} to ${M}: ${sumOfNumbers}`)
