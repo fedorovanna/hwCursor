@@ -18,18 +18,24 @@ if (M<N)
     N = M
     M = temp
 }
-for (let i = N; i <= M; i++) 
+if (skipEven)
 {
-    if(skipEven)
+    console.log('Skipping even numbers')
+    for (let i = N; i <= M; i++)
     {
-        if(i % 2 != 0)
+        if (i % 2 != 0)
         {
-            sumOfNumbers += i
+            {
+                sumOfNumbers += i
+            }
         }
     }
-    else
+}
+else
+{
+    for (let i = N; i <= M; i++)
     {
         sumOfNumbers += i;
-    }
+    }    
 }
-console.log('Sum=', sumOfNumbers)
+console.log('Sum of numbers:', sumOfNumbers)
