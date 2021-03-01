@@ -22,7 +22,6 @@ for (let i = N; i <= M; i++)
 {
     if(skipEven)
     {
-        console.log('Skipping even numbers')
         if(i % 2 != 0)
         {
             sumOfNumbers += i
@@ -30,7 +29,6 @@ for (let i = N; i <= M; i++)
     }
     else
     {
-        console.log('Not skipping even numbers')
         sumOfNumbers += i;
     }
 }
