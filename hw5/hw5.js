@@ -35,8 +35,12 @@ function getDividedByFive(...numbers)
 
 function divideByThree(word)
 {
-    const dividedWord = word.forEach((letter, i, arr) => { arr.slice(i, i+2)});
-    return dividedWord
+    let dividedWord = []
+    Object.keys(word).forEach(function(letter, i) {
+        if (i % 3 == 0) dividedWord.push(word.substring(i, i+3))
+    })
+    return dividedWord;
+
 }
 const randomArray = getRandomArray(5, 1, 14)
 console.log('Random array:', randomArray)
@@ -49,4 +53,4 @@ console.log('Average:', average)
 const positiveNumbers = countPositiveNumbers(1, -2, 3, -4, -5, 6)
 console.log('Positive numbers:', positiveNumbers)
 const dividedWord = divideByThree('exceptions')
-console.log(dividedWord)
+console.log('Divided word', dividedWord)
