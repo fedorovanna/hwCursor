@@ -1,5 +1,4 @@
-function getRandomArray(length, min, max)
-{
+function getRandomArray(length, min, max) {
     let randomArray = []
     for (let i = 0; i < length; i++) 
     {
@@ -8,33 +7,28 @@ function getRandomArray(length, min, max)
     return randomArray
 }
 
-function getAverage(...numbers)
-{
+function getAverage(...numbers) {
     const integerNumbers = numbers.filter(number => Number.isInteger(number))
     const average = integerNumbers.reduce((total, number) => (total + number), 0)/integerNumbers.length
     return average
 }
 
-function filterEvenNumbers(...numbers)
-{
+function filterEvenNumbers(...numbers) {
     const oddNumbers = numbers.filter(number => number % 2 != 0).join(', ')
     return oddNumbers
 }
 
-function countPositiveNumbers(...numbers)
-{
+function countPositiveNumbers(...numbers) {
     const positiveNumbers = numbers.filter(number => number > 0)
     return positiveNumbers.length
 }
 
-function getDividedByFive(...numbers)
-{
+function getDividedByFive(...numbers) {
     const dividedByFive = numbers.filter(number => number % 5 == 0).join(', ')
     return dividedByFive
 }
 
-function divideByThree(word)
-{
+function divideByThree(word) {
     let dividedWord = []
     Object.keys(word).forEach(function(letter, i) {
         if (i % 3 == 0) dividedWord.push(word.substring(i, i+3))

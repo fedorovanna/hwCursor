@@ -2,8 +2,7 @@ const students = ["Олександр", "Ігор", "Олена", "Іра", "О�
 const themes = ["Диференційне рівняння", "Теорія автоматів", "Алгоритми і структури даних"];
 const marks = [4, 5, 5, 3, 4, 5];
 
-function getPairs(students)
-{
+function getPairs(students) {
     const male = [students[0], students[1], students[4]]
     const female = [students[2], students[3], students[5]]
     let pairs = []
@@ -13,8 +12,7 @@ function getPairs(students)
     }
     return pairs
 }
-function getPairsTopic (pairs, themes)
-{
+function getPairsTopic (pairs, themes) {
     let pairsTopics = []
     for (let i = 0; i < pairs.length; i++) 
     {
@@ -23,8 +21,7 @@ function getPairsTopic (pairs, themes)
     return pairsTopics
 }
 
-function getStudentsMarks(students, marks)
-{
+function getStudentsMarks(students, marks) {
     let studentsMarks = []
     for ( let i =0; i < students.length; i++)
     {
@@ -33,8 +30,7 @@ function getStudentsMarks(students, marks)
     return studentsMarks
 }
 
-function getRandomMark(pairs, themes, marks)
-{
+function getRandomMark(pairs, themes, marks) {
     let pairsRandomMark = []
     for (let i = 0; i< pairs.length; i++) 
     {
@@ -43,6 +39,7 @@ function getRandomMark(pairs, themes, marks)
     }
     return pairsRandomMark
 }
+
 const pairs = getPairs(students)
 console.log(pairs)
 const pairsTopics = getPairsTopic(pairs, themes)

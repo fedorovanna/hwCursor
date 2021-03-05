@@ -1,5 +1,4 @@
-function getMaxDigit(number)
-{
+function getMaxDigit(number) {
     let max = 0
     while (number != 0)
     {
@@ -10,19 +9,16 @@ function getMaxDigit(number)
     return max
 }
 
-function upperLetter(name)
-{
+function upperLetter(name) {
     return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase()
 }
 
-function taxLeftover(salary)
-{
+function taxLeftover(salary) {
     let tax = 18 + 1.5
     return salary - (salary * tax)/100
 }
 
-function counLetter (letter, word)
-{
+function counLetter (letter, word) {
     let count = 0
     for (let i = 0; i < word.length; i++) 
     {
@@ -34,16 +30,15 @@ function counLetter (letter, word)
     return count
 }
 
-function convertCurrency(money)
-{
+function convertCurrency(money) {
     convertedMoney =0
     for (let i = 0; i < money.length; i++) {
-        if (money.charAt(i) == '$')
-        {
+        if (money.charAt(i) == '$') {
             convertedMoney = parseInt(money) * 25
         }
-        else if (money.charAt(i).toUpperCase() == 'U' && money.charAt(i+1).toUpperCase() == 'A' && money.charAt(i+2).toUpperCase() == 'H')
-        {
+        else if (money.charAt(i).toUpperCase() == 'U' &&
+        money.charAt(i+1).toUpperCase() == 'A' &&
+        money.charAt(i+2).toUpperCase() == 'H') {
             convertedMoney = parseInt(money) / 25 
         }        
     }
@@ -52,16 +47,13 @@ function convertCurrency(money)
 
 function deleteLetter (letter, word)
 {
-    for (let i = 0; i < word.length; i++) 
-    {
-        if (word.charAt(i) == letter)
-        {
+    for (let i = 0; i < word.length; i++) {
+        if (word.charAt(i) == letter) {
             word = word.replace(word.charAt(i), '')
         }
     }
     return word
 }
-
 
 console.log('sNoW =>', upperLetter('sNoW'))
 console.log('Max digit in 8549', getMaxDigit('8549'))
