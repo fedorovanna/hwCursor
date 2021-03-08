@@ -14,7 +14,7 @@ function getAverage(...numbers) {
 }
 
 function filterEvenNumbers(...numbers) {
-    const oddNumbers = numbers.filter(number => number % 2 != 0).join(', ')
+    const oddNumbers = numbers.filter(number => number % 2 != 0)
     return oddNumbers
 }
 
@@ -24,7 +24,7 @@ function countPositiveNumbers(...numbers) {
 }
 
 function getDividedByFive(...numbers) {
-    const dividedByFive = numbers.filter(number => number % 5 == 0).join(', ')
+    const dividedByFive = numbers.filter(number => number % 5 == 0)
     return dividedByFive
 }
 
