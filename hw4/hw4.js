@@ -41,10 +41,10 @@ function getRandomMark(pairs, themes, marks) {
 }
 
 const pairs = getPairs(students)
-console.log(pairs)
+console.log('Pairs of students', pairs)
 const pairsTopics = getPairsTopic(pairs, themes)
-console.log(pairsTopics)
+console.log('Pairs with the topics', pairsTopics)
 const studentsMarks = getStudentsMarks(students, marks)
-console.log(studentsMarks)
+console.log('Students marks', studentsMarks)
 const pairsRandomMark = getRandomMark(pairs, themes, marks)
-console.log(pairsRandomMark)
+console.log('Random mark for each pair', pairsRandomMark)

@@ -30,16 +30,16 @@ function counLetter (letter, word) {
     return count
 }
 
-function convertCurrency(money) {
-    convertedMoney =0
+function convertCurrency(money, dollarRate) {
+    convertedMoney = 0
     for (let i = 0; i < money.length; i++) {
         if (money.charAt(i) == '$') {
-            convertedMoney = parseInt(money) * 25
+            convertedMoney = parseInt(money) * dollarRate
         }
         else if (money.charAt(i).toUpperCase() == 'U' &&
         money.charAt(i+1).toUpperCase() == 'A' &&
         money.charAt(i+2).toUpperCase() == 'H') {
-            convertedMoney = parseInt(money) / 25 
+            convertedMoney = parseInt(money) / dollarRate 
         }        
     }
     return convertedMoney
@@ -59,5 +59,5 @@ console.log('sNoW =>', upperLetter('sNoW'))
 console.log('Max digit in 8549', getMaxDigit('8549'))
 console.log('Salary (1000)', taxLeftover(1000))
 console.log('Letter o in the word console:', counLetter('o', 'console'))
-console.log('100$ =', convertCurrency('100$'), '2500UAH=', convertCurrency('2500uah'))
+console.log('100$ =', convertCurrency('100$', 25), '2500UAH=', convertCurrency('2500uah', 25))
 console.log('Delete letter o in the word concole:', deleteLetter('o', 'console'))
