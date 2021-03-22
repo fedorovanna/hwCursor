@@ -9,23 +9,19 @@ function getRandomArray(length, min, max) {
 
 function getAverage(...numbers) {
     const integerNumbers = numbers.filter(number => Number.isInteger(number))
-    const average = integerNumbers.reduce((total, number) => (total + number), 0)/integerNumbers.length
-    return average
+    return integerNumbers.reduce((total, number) => (total + number), 0)/integerNumbers.length 
 }
 
 function filterEvenNumbers(...numbers) {
-    const oddNumbers = numbers.filter(number => number % 2 != 0)
-    return oddNumbers
+    return numbers.filter(number => number % 2 != 0) 
 }
 
 function countPositiveNumbers(...numbers) {
-    const positiveNumbers = numbers.filter(number => number > 0)
-    return positiveNumbers.length
+    return numbers.filter(number => number > 0)
 }
 
 function getDividedByFive(...numbers) {
-    const dividedByFive = numbers.filter(number => number % 5 == 0)
-    return dividedByFive
+    return numbers.filter(number => number % 5 == 0) 
 }
 
 function divideByThree(word) {
