@@ -17,12 +17,15 @@ function getTotalTaxes(country){
 function getMySalary(country){
     setInterval(()=>{
     let obj = {}
-    obj.salary = Math.floor((Math.random()*500)+1500)
+    const min = 1500
+    const max = 2000
+    obj.salary = Math.floor((Math.random() * (max - min)) + min)
     obj.taxes = this.tax * obj.salary
     obj.profit = obj.salary - obj.taxes
     console.log(obj)}, 10000)
 }
-console.log('My tax:', getMyTaxes.call(ukraine, 1700))
+const yourSalary = 1700
+console.log('My tax:', getMyTaxes.call(ukraine, yourSalary))
 console.log('Middle tax:', getMiddleTaxes.call(litva))
 console.log('Total tax:', getTotalTaxes.call(latvia))
 getMySalary.call(litva)
