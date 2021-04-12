@@ -27,7 +27,7 @@ class Student {
     }
 
     dismiss(){
-        this.allmarks = null
+        this.allMarks = null
     }
 
     recover(){
