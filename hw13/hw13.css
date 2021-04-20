@@ -1,5 +1,45 @@
 html {
-    font-size: 10px;
+    font-size: 24px;
     background-size: cover;
-    background-image: url(background.jpg);
-  }
+    background-image: url(background1.jpg);
+    background-attachment: fixed;
+
+}
+body,html {
+    margin: 0;
+    padding: 10px;
+    font-family: 'Segoe UI', Roboto, sans-serif
+    }
+header{
+    text-align: center;
+    text-shadow: black;
+    font-size: 36px;
+    color: rgb(237, 173, 24);
+}
+label {
+    color: rgb(237, 173, 24);    
+}
+.container {
+    font-size: 26px;
+    color: rgb(237, 173, 24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 25px;
+}
+button {
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    height: 55px;
+    background-color: rgb(237, 173, 24);
+    border: 2px solid white;
+    display: inline-block;
+    padding: 12px 70px;
+    margin: 10px 20px;
+    border-radius: 25px;
+}   

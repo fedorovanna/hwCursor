@@ -6,23 +6,25 @@
         content="width=device-width, user-scalable=no initial-scale=0, maximum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <title>Homework 13</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="hw13.css">
     </head>
     <body>
         <header>
             <h1>Star wars</h1>
         </header>
         <main>
-            <label for="episods">Choose the episod</label>
+            <label for="episods">Choose the episode</label>
             <select name="episods" id="episods">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
+                <option value="6">6</option>
             </select>
             <button id="getInfo" class="button">Get info about characters</button>
-            <div id="info-container"></div>
+            <button id="getPlanets" class="button">Get Planets</button>
+            <div id="info-container" class="container"></div>
         </main>
         <script src="./hw13.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
