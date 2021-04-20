@@ -54,12 +54,16 @@ function getPlanets(page){
         infoContainer.appendChild(next);
         next.addEventListener('click', function(){
             p++;
-            if(p===7)p=6
+            if(p===7){
+                p=6
+            }
             getPlanets(p); 
         });
         previous.addEventListener('click', function(){
             p--;
-            if(p===0)p=1
+            if(p===0){
+                p=1
+            }
             getPlanets(p);
         });
     })
