@@ -3,4 +3,6 @@ function* createIdGenerator(){
     while(true)
         yield i++;
 }
+
 const idGenerator = createIdGenerator();
+const fontGenerator = newFontGenerator(14);
